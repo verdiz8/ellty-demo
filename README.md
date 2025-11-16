@@ -1,4 +1,7 @@
 ```bash
+# 301.r
+- updated finetuned figmal colors
+
 # 203
 - title update
 # 202

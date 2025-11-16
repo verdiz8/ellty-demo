@@ -11,7 +11,7 @@ interface Props {
 
 export default function CheckboxRow({ label, checked, indeterminate, onChange }: Props) {
   return (
-    <div className="flex w-full items-center justify-between">
+    <div className="flex w-full items-center justify-between py-1">
       <span className="text-sm font-light text-gray-900">{label}</span>
 
       <CustomCheckbox checked={checked} indeterminate={indeterminate} onChange={onChange} />

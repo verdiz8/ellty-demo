@@ -32,7 +32,7 @@ export default function PageList() {
 
   return (
     <div className="space-y-4">
-      <div className="border-b border-gray-200 pt-2 pb-2">
+      <div className="border-b border-[#CDCDCD] pb-4">
         <CheckboxRow
           label="All pages"
           checked={allChecked}

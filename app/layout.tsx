@@ -1,9 +1,12 @@
 import { ThemeModeScript } from "flowbite-react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400"], // Figma says weight 400
+});
 
 export const metadata: Metadata = {
   title: "Ellty | Demo",
@@ -15,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <ThemeModeScript mode="dark" />
       </head>
-      <body className={`${inter.className} dark:bg-gray-900`}>{children}</body>
+      <body className={`${montserrat.className} bg-white text-[#1F2128]`}>{children}</body>
     </html>
   );
 }
