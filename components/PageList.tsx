@@ -46,7 +46,7 @@ export default function PageList() {
           key={name}
           className={index === pageNames.length - 1 ? "border-b border-gray-200 pb-4" : ""}
         >
-          <CheckboxRow label={name} checked={pages[index]} onChange={() => togglePage(index)} />
+          <CheckboxRow label={name} checked={!!pages[index]} onChange={() => togglePage(index)} />
         </div>
       ))}
     </div>
