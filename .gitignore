@@ -42,3 +42,5 @@ next-env.d.ts
 
 # draft text
 READ.md
+.gitignore
+.env.local
